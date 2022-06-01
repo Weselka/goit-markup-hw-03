@@ -1,0 +1,246 @@
+/*основний колір тексту #212121 */
+/*вторинний колір тексту #757575 */
+/*акцентт #2196F3 */
+/*основний колір фону #ffffff */
+/*колір фону героя та футера #2f303a */
+/*шрифт лого Raleway*/
+/*основний шрифт тексту Roboto*/
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --more-text-color: #ffffff;
+    --accent-color: #2196F3;
+    --main-font: Roboto, sans-serif;
+    --primary-bgc:#ffffff;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--primary-bgc);    
+}
+
+/*-------Дублюючі класи---------*/
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #188CE8;
+    color: var(--more-text-color);    
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/*--------------Об'єднані класи-----*/
+
+.teams-name, 
+.teams-expert {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;    
+}
+
+.footer-address,
+.footer-link {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;    
+}
+
+.nav .link:hover,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.footer .link:hover,
+.footer .link:focus,
+.contact .link:hover,
+.contact .link:focus,
+.gallery .link:hover,
+.gallery .link:focus {
+    color: var(--accent-color);
+}
+
+/*--------------навігаія по сайту--------------*/
+
+.logo {
+    font-family: Raleway, sans-serif;
+    color: var(--accent-color);    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;    
+}
+
+.logo-up {
+    color: #000000;    
+}
+
+.site-nav .link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/*------------------Контакти-----------------------*/
+
+.contact .link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+/*-------------Герой--------------*/
+
+.hero {
+    background: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--more-text-color);
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--more-text-color);
+    background: var(--accent-color);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/*--------------Секції-----------------------*/
+
+.feature-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color: var(--primary-text-color);    
+}
+
+
+.feature-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.work-title,
+.teams-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.teams-name {    
+    font-weight: 500; 
+    color: var(--primary-text-color);
+}
+
+.teams-expert {        
+    color: var(--title-text-color);
+}
+
+.teams {
+    background: #f5f4fa;
+}
+
+.teams-object {
+    background-color: var(--primary-bgc);
+}
+
+/*--------Футер---------*/
+
+.footer {
+    background-color: #2f303a;
+}
+
+.logo-down {
+    color: var(--more-text-color);
+}
+
+.footer-address {
+    color: var(--more-text-color);
+}
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*------------Портфоліо-------------*/
+
+.gallery-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color: var(--primary-text-color);
+    background: #f5f4fa;
+    border-radius: 4px;
+    cursor: pointer;    
+}
+
+.gallery-work {
+    background: var(--primary-bgc);
+}
+
+.gallery-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;    
+    color: var(--primary-text-color);
+}
+
+.gallery-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;    
+    color: var(--title-text-color);
+}
