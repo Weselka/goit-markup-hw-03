@@ -79,9 +79,21 @@ body {
     color: var(--accent-color);
 }
 
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    outline: 2px solid#757575;
+}
+
+.page-header {
+    /* background-color: orange; */
+}
+
 /*--------------навігаія по сайту--------------*/
 
 .logo {
+    margin-top: 24px;
+
     font-family: Raleway, sans-serif;
     color: var(--accent-color);    
     font-weight: 700;
@@ -107,6 +119,11 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav, .contact {
+    /* display: inline-block; */
+    margin-top: 32px;
+}
+
 /*------------------Контакти-----------------------*/
 
 .contact .link {
@@ -120,34 +137,54 @@ body {
 /*-------------Герой--------------*/
 
 .hero {
+    text-align: center;
+
     background: #2F303A;
 }
 
 .hero-title {
+    padding-top: 200px;
+    padding-left: 252px;
+    padding-right: 252px;
+    /* padding-bottom: 280px; */
+    /* width: 696px; */
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--more-text-color);
 }
 
 .hero-btn {
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
-    text-align: center;
+    align-items: center;    
     letter-spacing: 0.06em;
     color: var(--more-text-color);
     background: var(--accent-color);
-    cursor: pointer;
-    border-radius: 4px;
+    cursor: pointer;    
 }
 
 /*--------------Секції-----------------------*/
+.feature {
+    /* width: 1170px; */
+    /* padding: 0 15px; */
+    /* margin: 94px; */
+}
 
 .feature-title {
     font-size: 14px;
