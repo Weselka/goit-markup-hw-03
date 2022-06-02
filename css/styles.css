@@ -49,6 +49,13 @@ body {
     margin: -1px;
 }
 
+.container {
+    margin: 0 auto;
+    /* padding: 94px; */
+    width: 1200px;
+    outline: 2px solid#757575;
+}
+
 /*--------------Об'єднані класи-----*/
 
 .teams-name, 
@@ -79,21 +86,25 @@ body {
     color: var(--accent-color);
 }
 
-.container {
-    margin: 0 auto;
-    width: 1200px;
-    outline: 2px solid#757575;
+.work-title,
+.teams-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 
-.page-header {
-    /* background-color: orange; */
+.feature,
+.work,
+.teams {
+    padding: 94px;
 }
 
 /*--------------навігаія по сайту--------------*/
 
-.logo {
-    margin-top: 24px;
-
+.logo { 
     font-family: Raleway, sans-serif;
     color: var(--accent-color);    
     font-weight: 700;
@@ -121,7 +132,7 @@ body {
 
 .site-nav, .contact {
     /* display: inline-block; */
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 
 /*------------------Контакти-----------------------*/
@@ -143,11 +154,13 @@ body {
 }
 
 .hero-title {
+    margin: auto;
+    max-width: 696px;
     padding-top: 200px;
-    padding-left: 252px;
+    /* padding-left: 252px;
     padding-right: 252px;
-    /* padding-bottom: 280px; */
-    /* width: 696px; */
+    padding-bottom: 280px;
+    width: 696px; */
 
     font-weight: 900;
     font-size: 44px;
@@ -203,15 +216,6 @@ body {
     color: var(--title-text-color);
 }
 
-.work-title,
-.teams-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
 
 .teams-name {    
     font-weight: 500; 
