@@ -131,8 +131,12 @@ body {
 }
 
 .site-nav, .contact {
-    /* display: inline-block; */
+    display: flex;
     /* margin-top: 32px; */
+}
+
+.page-header .container {
+    display: flex;
 }
 
 /*------------------Контакти-----------------------*/
