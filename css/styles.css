@@ -50,10 +50,13 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    /* padding: 94px; */
+    background-color: yellow;    
+
     width: 1200px;
-    outline: 2px solid#757575;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;        
 }
 
 /*--------------Об'єднані класи-----*/
@@ -102,16 +105,20 @@ body {
     padding: 94px;
 }
 
-/*--------------навігаія по сайту--------------*/
+/*--------------навігація по сайту--------------*/
 
-.logo { 
-    font-family: Raleway, sans-serif;
-    color: var(--accent-color);    
+.logo {
+    min-width: 215px;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;        
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;    
+    /* text-decoration: none;     */
 }
 
 .logo-up {
@@ -119,60 +126,86 @@ body {
 }
 
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    letter-spacing: 0.02em;    
+}
+
+.nav {
+    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .site-nav .link.current {
     color: var(--accent-color);
 }
 
-.site-nav, .contact {
+.site-nav {
     display: flex;
-    /* margin-top: 32px; */
+    margin-left: 93px;  
 }
 
-.page-header .container {
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.main-nav {
     display: flex;
+    align-items: center;    
 }
 
 /*------------------Контакти-----------------------*/
 
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contact .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+    
+    color: var(--title-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
 }
 
 /*-------------Герой--------------*/
 
 .hero {
-    text-align: center;
-
     background: #2F303A;
+
+    text-align: center;    
 }
 
 .hero-title {
     margin: auto;
     max-width: 696px;
-    padding-top: 200px;
-    /* padding-left: 252px;
-    padding-right: 252px;
-    padding-bottom: 280px;
-    width: 696px; */
-
+    /* padding-top: 200px; */
+    /* padding-bottom: 280px; */
+    
+    /* text-align: center; */
+    color: var(--more-text-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    /* text-align: center; */
+    line-height: 1.36;    
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--more-text-color);
+    text-transform: uppercase;    
 }
 
 .hero-btn {
@@ -183,7 +216,7 @@ body {
     text-align: center;
     border: 1px solid transparent;
     margin-top: 30px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     
     font-family: inherit;
     font-weight: 700;
@@ -202,6 +235,19 @@ body {
     /* padding: 0 15px; */
     /* margin: 94px; */
 }
+
+.feature-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    background: #f5f4fa;
+}
+
+.feature-list .list {
+    width: 270px;
+}
+
+.feature-list .list:not(:last-child) {
+    margin-right: 30px;
 
 .feature-title {
     font-size: 14px;
