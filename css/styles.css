@@ -105,6 +105,8 @@ body {
 .logo {
     min-width: 145px;
     display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     color: var(--accent-color);
     font-family: Raleway, sans-serif;        
@@ -116,8 +118,6 @@ body {
 
 .logo-up {
     color: #000000;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .site-nav .link {
@@ -186,7 +186,7 @@ body {
 
 .hero {
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 
     background: #2F303A;
 
