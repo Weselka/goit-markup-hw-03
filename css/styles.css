@@ -13,11 +13,21 @@
     --accent-color: #2196F3;
     --main-font: Roboto, sans-serif;
     --primary-bgc:#ffffff;
+    --gallery-section-gap: 30px;
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);        
 }
 
 body {
     font-family: var(--main-font);
     background-color: var(--primary-bgc);    
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*-------Дублюючі класи---------*/
@@ -57,6 +67,7 @@ body {
     margin-right: auto;
 }
 
+
 /*--------------Об'єднані класи-----*/
 
 .main-nav .link:hover,
@@ -69,6 +80,11 @@ body {
 .gallery .link:hover,
 .gallery .link:focus {
     color: var(--accent-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .work-title,
@@ -87,13 +103,6 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-}
-
-.teams-img,
-.work-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 .site-nav .item:not(:last-child),
@@ -140,20 +149,11 @@ body {
     letter-spacing: 0.02em;    
 }
 
-.nav {
-    /* display: block; */
-    /* display: flex; */
-    /* align-items: center;*/
-}
-
 .site-nav .link.current {
     color: var(--accent-color);
 }
 
-.site-nav {
-    display: flex;
-}
-
+.site-nav,
 .main-nav {
     display: flex;
 }
@@ -210,13 +210,9 @@ body {
 }
 
 .hero-btn {
-    /* display: inline-block; */
     padding: 10px 30px;
     border-radius: 4px;
-    /* min-width: 200px; */
-    /* text-align: center; */
     border: 1px solid transparent;
-    /* margin-top: 30px; */
 
     font-weight: 700;
     font-size: 16px;
@@ -233,8 +229,6 @@ body {
 
 .feature-list {
     display: flex;
-    padding-top: 95px;
-    padding-bottom: 95px;
 }
 
 .feature-list .list {
@@ -253,7 +247,6 @@ body {
     text-transform: uppercase;    
 }
 
-
 .feature-text {
     color: var(--title-text-color);
     font-size: 14px;
@@ -261,10 +254,6 @@ body {
 
     letter-spacing: 0.03em;
 }
-/* 
-.feature-list {
-    background: green;
-} */
 
 /*--------------Секція Чим ми займаємось----------*/
 
@@ -275,25 +264,24 @@ body {
 .work-list {
     display: flex;
     align-items: center;
-    padding-bottom: 94px;
 }
 
 /*--------------Секція Наша команда---------------*/
 
-.teams {
+.section.teams {
     background: #f5f4fa;
 }
 
 .teams-title {
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
 .teams-object {
     background-color: var(--primary-bgc);
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--card-shadow);
     border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
 }
 
 .teams-img,
@@ -314,7 +302,6 @@ body {
 
 .teams-list {
     display: flex;
-    padding-bottom: 94px;
 }
 
 /*--------Футер---------*/
@@ -339,7 +326,6 @@ body {
 .logo-down {
     color: var(--more-text-color);
     padding-top: 60px;
-    /* padding-bottom: 25px; */
 }
 
 .footer-address {
@@ -369,20 +355,51 @@ body {
 /*------------Портфоліо-------------*/
 
 .gallery-btn {
-    font-family: inherit;
+    color: var(--primary-text-color);
+    background: #f5f4fa;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+
     text-align: center;
-    letter-spacing: 0.03em;    
-    color: var(--primary-text-color);
-    background: #f5f4fa;
+    letter-spacing: 0.03em;
     border-radius: 4px;
+    border: 1px solid transparent;
     cursor: pointer;    
 }
 
-.gallery-work {
+.flex-elements .btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.flex-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-left: calc(-1 * var(--gallery-section-gap));
+    margin-top: calc(-1 * var(--gallery-section-gap));
+}
+
+.flex-elements > .item {
+    width: 370px;
+    flex-basis: calc(100% / 3 - var(--gallery-section-gap));
+    margin-left: var(--gallery-section-gap);
+    margin-top: var(--gallery-section-gap);
+
     background: var(--primary-bgc);
+
+    border: 1px solid transparent;
+    border-bottom-color: #EEEEEE;;
+}
+
+.flex-elements .btn {
+    display: block;
+    padding: 6px 22px;
+}
+
+.gallery-subject {
+    padding: 20px 24px;
 }
 
 .gallery-title {
