@@ -373,7 +373,7 @@ img {
     cursor: pointer;    
 }
 
-.flex-elements .list:not(:last-child) {
+.flex-elements .button:not(:last-child) {
     margin-right: 9px;
 }
 
