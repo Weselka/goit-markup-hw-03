@@ -386,7 +386,7 @@ img {
     margin-top: calc(-1 * var(--gallery-section-gap));
 }
 
-.flex-elements.btn {
+.flex-elements.button {
     margin-bottom: 50px;
 }
 
