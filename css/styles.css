@@ -382,8 +382,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
 
-    margin-left: calc(-1 * var(--gallery-section-gap));
-    margin-top: calc(-1 * var(--gallery-section-gap));
+    /* margin-left: calc(-1 * var(--gallery-section-gap));
+    margin-top: calc(-1 * var(--gallery-section-gap)); */
 }
 
 .flex-elements.button {
@@ -396,6 +396,11 @@ img {
     margin-top: var(--gallery-section-gap);
 
     background: var(--primary-bgc);
+}
+
+.flex-elements.gallery {
+    margin-left: calc(-1 * var(--gallery-section-gap));
+    margin-top: calc(-1 * var(--gallery-section-gap));
 }
 
 .flex-elements .btn {
